@@ -14,13 +14,21 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #FFFFFF;
   font-weight: 400;
+
 }
 
 a {
@@ -33,8 +41,41 @@ image {
 }
 
 .page-header {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
   color: #333333;
   background-color: #FFFFFF;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.navigation-list,
+.navigation-user {
+  display: flex;
+  list-style: none;
+}
+
+.navigation-logo {
+  margin-right: 30px;
+  margin-left: 70px;
+  width: 139px;
+}
+
+.navigation-list {
+  width: 490px;
+  margin: 0;
+  padding: 0;
+  gap: 34px;
+}
+
+.navigation-user {
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -42,13 +83,18 @@ image {
   line-height: 26px;
   font-weight: 700;
   font-size: 20px;
-  text-align: center;
   background-color: #FFFFFF;
   color: #000000;
+  text-align: center;
+  text-decoration: none;
   text-transform: capitalize;
 }
 
 /* Стили для мейна */
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   color: #000000;
   background-color: #FFFFFF;
@@ -58,7 +104,40 @@ image {
   background-image: url("../images/gallery-1.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-size: 1200px 485px;
+  width: 100%;
+  min-width: 1200px;
+  min-height: 485px;
 }
+
+.welcome-image {
+  display: block;
+  margin: 0 auto;
+  padding: 51px 371px 82px 371px;
+}
+
+.advantages-text-wrapper {
+  padding: 63px 270px 90px;
+
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.features-list {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 
 .advantages-description {
   color: #000000;
@@ -75,6 +154,27 @@ image {
   line-height: 26px;
   text-align: center;
 
+}
+
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.advantages-item {
+  flex: 1;
+}
+
+.advantage-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 85px;
 }
 
 .advantages-item-title {
@@ -96,6 +196,11 @@ image {
 .diff-text,
 .diff-title {
   color: #FFFFFF;
+  margin: 0;
+}
+
+.diff-text {
+  margin-top: 30px;
 }
 
 .advantages-item:nth-child(3),
@@ -109,12 +214,14 @@ image {
 
 .advantages-item-title-wrapper {
   background-color: #82B3D3;
+  width: 230px;
 }
 
 
 .features-item {
   background-color: rgba(131, 179, 211, 0.12);
-
+  width: 230px;
+  padding: 80px 85px;
 }
 
 .features-item:nth-child(2n) {
@@ -128,6 +235,9 @@ image {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
 }
 
 .features-description {
@@ -135,6 +245,17 @@ image {
   line-height: 21px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+}
+
+.interest {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
 }
 
 .interest-title {
@@ -152,19 +273,27 @@ image {
   color: #333333;
 }
 
-.interest-button {
-  width: 574px;
-  height: 60px;
-  background-color: #756157;
+.button {
   border-radius: 4px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   color: #FFFFFF;
+  background-color: #756157;
+  text-align: center;
+  border: none;
+}
+
+.interest-button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subscription-index {
@@ -187,6 +316,10 @@ image {
   text-align: center;
 }
 
+.subscription-form {
+  display: flex;
+}
+
 .newsletter-email {
   font-size: 18px;
   line-height: 21px;
@@ -196,32 +329,33 @@ image {
 }
 
 .field {
+  width: 600px;
   background-color: #F2F2F2;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .subscription-button {
   background-color: #82B3D3;
   border-radius: 0px 10px 10px 0px;
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
 }
 
-.page-header {
-  font-size: 40px;
-  line-height: 40px;
+.page-footer {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
 }
 
+.footer-social-list {
+  display: flex;
+  gap: 27.33px;
+}
 
 .footer-contacts-phone {
   font-size: 40px;
@@ -232,25 +366,53 @@ image {
 }
 
 .footer-logo-link {
-  background-color: #000000;
+  background-color: #FFFFFF;
 }
 
 .inner-header {
   background-image: url("../images/gallery-5.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px 70px 70px;
+}
+
+.inner-header-filter {
+  display: flex;
+  justify-content: space-between;
 }
 
 .inner-header-title {
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
+
 }
 
 .inner-header-description {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+}
+
+.inner-header-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.infrastructure-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-group {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-title {
@@ -276,26 +438,28 @@ image {
 }
 
 .button-submit {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: #82B3D3;
+  background-color: #82B3D3;
   border-radius: 4px;
 }
 
 .button-reset {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
+  background-color: transparent;
 }
 
+.top-control-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0px 71px 0px 73px;
+}
 
 .results-title {
   font-weight: 700;
@@ -303,6 +467,16 @@ image {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.select-control-first {
+  width: 290px;
+}
+
+.view-list {
+  display: flex;
+  gap: 8px;
+  list-style: none;
 }
 
 .select-control>option {
@@ -338,26 +512,27 @@ image {
   color: #333333;
 }
 
-.product-card-button {
-  Width: 140px;
-  height: 37px;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
 
 .button-more {
-  background-color: #756157;
+  padding: 5px;
+}
+
+.bottom-control-panel {
+  display: flex;
+  width: 1056px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button-favorite {
   background-color: #82B3D3;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item {
@@ -365,30 +540,27 @@ image {
   height: 60px;
   border-radius: 4px;
   background-color: #82B3D3;
-  box-sizing: border-box;
   font-weight: 700;
+  margin-right: 8px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  display: flex;
+}
+
+.pagination-link {
+  margin: auto;
 }
 
 .pagination-current {
   background-color: #F2F2F2;
-  font-size: 20px;
-  line-height: 36px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
   color: #000000;
 }
 
-.pagination {
-  font-size: 20px;
-  line-height: 36px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
+.select-control-second {
+  width: 160px;
 }
+
 
 .product-card-description>option {
   font-weight: 400;
@@ -403,8 +575,4 @@ image {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-}
-
-.subscription {
-  background-color: #FFFFFF;
 }
