@@ -15,35 +15,33 @@
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="home.html">Главная</a>
+          <a class="navigation-link navigation-link-current" href="home.html">Главная</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="obout.html">О Седоне</a>
+          <a class="navigation-link" href="about.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="hotel.html">Гостиницы</a>
+          <a class="navigation-link" href="hotel.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-search" href="#">
             <span class="visually-hidden">
-              Поиск.
+              Поиск
             </span>
           </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-like" href="#">
             <span class="visually-hidden">
-              Лайкнуть страницу.
+              Лайкнуть страницу
             </span>
           </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-want button" href="#">
-            <span class="visually-hidden">
-              Кнопка хочу сюда!
-            </span>
+            Кнопка хочу сюда!
           </a>
         </li>
       </ul>
@@ -53,11 +51,14 @@
     <div class="page-container">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <p class="inner-header-description">Гостиницы </p>
+        <div class="inner-header-description">
+          <span class="house-icon"></span>
+          Гостиницы
+        </div>
         <div class="inner-header-filter">
           <ul class="inner-header-list">
             <li class="inner-header-item">
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-filter-group-first">
                 <legend class="catalog-filter-title">Инфраструктура</legend>
                 <ul class="infrastructure-list">
                   <li class="infrastructure-item">
@@ -82,7 +83,7 @@
               </fieldset>
             </li>
             <li class="inner-header-item">
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-filter-group-second">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="infrastructure-list">
                   <li class="infrastructure-item">
@@ -109,22 +110,22 @@
           </ul>
           <div class="inner-header-price">
             <fieldset class="catalog-filter-price">
-              <legend class="catalog-filter-title">Стоимость</legend>
-              <label class="control">
-                <span>от</span>
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <label class="control-price">
                 <input class="price" type="number" min="0" max="10000" step="500" placeholder="0">
-              </label>
-              <label class="control">
-                <span>до</span>
-                <input class="price" type="number" min="0" max="10000" step="500" placeholder="9000">
+              </label><label class="control-price">
+                <input class="price max-price" type="number" min="0" max="10000" step="500" placeholder="9000">
               </label>
               <div class="slider">
-                <input type="button" value=" ">
-                <input type="button" value=" ">
-                <button class="button button-submit" type="submit">Применить</button>
-                <button class="button button-reset" type="reset">Сбросить</button>
+                <button class="price-slider-button" type=""></button>
+                <button class="price-slider-button" type=""></button>
+                <div class="price-slider-line"></div>
               </div>
             </fieldset>
+            <div class="filter-buttons">
+              <button class="button button-submit" type="submit">Применить</button>
+              <button class="button button-reset" type="reset">Сбросить</button>
+            </div>
           </div>
         </div>
       </header>
@@ -139,17 +140,17 @@
           </select>
           <ul class="view-list">
             <li class="view-item">
-              <a class="button-button-light" href="#">
+              <a class="button button-light" href="#">
                 <span class="visually-hidden">Показать таблицу.</span>
               </a>
             </li>
             <li class="view-item">
-              <a class="button-button-light" href="#">
+              <a class="button button-light" href="#">
                 <span class="visually-hidden">Показать картинки.</span>
               </a>
             </li>
             <li class="view-item">
-              <a class="button-button-light" href="#">
+              <a class="button button-light" href="#">
                 <span class="visually-hidden">Показать список.</span>
               </a>
             </li>
@@ -253,7 +254,7 @@
         <h3 class="subscription-title">Подпишитесь на рассылку</h3>
         <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="http://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Ваш Email</label>
+          <label for="newsletter-email" hidden>Ваш Email</label>
           <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
             id="newsletter-email" required>
           <button class="button subscription-button" type="submit">Подписаться</button>
@@ -266,17 +267,17 @@
       <h2 class="visually-hidden" hidden>Социальные сети.</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="social-button" href="#">
+          <a class="social-button footer-social-vk" href="#">
             <span class="visually-hidden">ВКонтакте.</span>
           </a>
         </li>
-        <li class="footer-social-item">
+        <li class="footer-social-item footer-social-telegram">
           <a class="social-button" href="#">
             <span class="visually-hidden">Твиттер.</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="social-button" href="#">
+          <a class="social-button footer-social-youtube" href="#">
             <span class="visually-hidden">Ютуб.</span>
           </a>
         </li>
@@ -289,7 +290,9 @@
     </section>
     <section class="footer-logo">
       <h2 class="visually-hidden">Ссылка на html academy.</h2>
-      <a class="footer-logo-link" href="https://htmlacademy.ru/">.html academy</a>
+      <a class="footer-logo-link" href="https://htmlacademy.ru/">
+        <img src="images/html_academy.svg" alt="Логотип HTML Academy">
+      </a>
     </section>
   </footer>
 </body>
