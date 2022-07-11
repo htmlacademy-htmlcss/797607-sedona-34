@@ -8,8 +8,6 @@
 </head>
 
 <body>
-  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
-      href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
@@ -43,7 +41,7 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-want button" href="#">
-            Кнопка хочу сюда!
+            Хочу сюда!
           </a>
         </li>
       </ul>
@@ -53,15 +51,15 @@
     <div class="page-container">
       <section class="main-title">
         <div class="main-image">
-          <h1 class="visually-hidden" hidden>Туристический городок седона.</h1>
+          <h1 class="visually-hidden">Туристический городок седона.</h1>
           <img class="welcome-image" src="images/welcome.svg" width="458" height="352"
             alt="Красивый вид гор Гранд Коньона.">
         </div>
       </section>
       <section class="advantages">
         <div class="advantages-text-wrapper">
-          <h2 class="visually-hidden" hidden>Преимущества.</h2>
-          <b class="advantages-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+          <h2 class="visually-hidden">Преимущества.</h2>
+          <p class="advantages-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <ol class="advantages-list">
@@ -122,19 +120,19 @@
         </ol>
       </section>
       <section class="interest">
-        <h2 class="visually-hidden" hidden>Заинтересовались?.</h2>
+        <h2 class="visually-hidden">Заинтересовались?.</h2>
         <h3 class="interest-title">Заинтересовались?</h3>
         <p class="interest-description">
-          Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <button class="button interest-button" type="submit"> Поиск гостиницы В Седоне</button>
       </section>
       <section class="subscription subscription-index">
-        <h2 class="visually-hidden" hidden>Подписка на рассылку.</h2>
+        <h2 class="visually-hidden">Подписка на рассылку.</h2>
         <h3 class="subscription-title">Подпишитесь на рассылку</h3>
-        <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscription-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscription-form" action="http://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Ваш Email</label>
+          <label class="visually-hidden" for="newsletter-email">Ваш Email</label>
           <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
             id="newsletter-email" required>
           <button class="button subscription-button" type="submit">Подписаться</button>
@@ -147,17 +145,17 @@
       <h2 class="visually-hidden" hidden>Социальные сети.</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="social-button" href="#">
+          <a class="social-button footer-social-vk" href="#">
             <span class="visually-hidden">ВКонтакте.</span>
           </a>
         </li>
-        <li class="footer-social-item">
+        <li class="footer-social-item footer-social-telegram">
           <a class="social-button" href="#">
             <span class="visually-hidden">Твиттер.</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="social-button" href="#">
+          <a class="social-button footer-social-youtube" href="#">
             <span class="visually-hidden">Ютуб.</span>
           </a>
         </li>
@@ -170,7 +168,9 @@
     </section>
     <section class="footer-logo">
       <h2 class="visually-hidden">Ссылка на html academy.</h2>
-      <a class="footer-logo-link" href="https://htmlacademy.ru/">.html academy</a>
+      <a class="footer-logo-link" href="https://htmlacademy.ru/">
+        <img src="images/html_academy.svg" alt="Логотип HTML Academy">
+      </a>
     </section>
   </footer>
 </body>
