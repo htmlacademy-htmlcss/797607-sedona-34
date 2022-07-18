@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -39,15 +39,6 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
-image {
-  max-width: 100%;
-  height: auto;
 }
 
 .page-header {
@@ -174,7 +165,7 @@ image {
 
 .circle-number {
   position: absolute;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -195,6 +186,7 @@ image {
   padding: 9px 15px 8px;
   margin-left: 13px;
   margin-bottom: 3px;
+  text-decoration: none;
 }
 
 .main-container {
@@ -435,6 +427,7 @@ image {
   border: none;
   font-family: inherit;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button:disabled,
@@ -511,7 +504,7 @@ image {
 }
 
 .field::placeholder {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.3);
@@ -593,6 +586,7 @@ image {
   text-transform: uppercase;
   color: #000000;
   padding-left: 11px;
+  text-decoration: none;
 }
 
 .footer-contacts-phone:hover {
@@ -672,6 +666,7 @@ image {
 
 .inner-header-breadcrumbs-link {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .inner-header-breadcrumbs-link:hover {
@@ -1132,7 +1127,7 @@ image {
 }
 
 .select-control-first {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1271,7 +1266,7 @@ image {
 }
 
 .select-control-second {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1344,7 +1339,7 @@ image {
   border-radius: 30px;
   box-shadow: 0 0 60px #cccccc;
   box-sizing: border-box;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .modal-form {
@@ -1424,7 +1419,7 @@ image {
   background-color: #F2F2F2;
   padding: 11px 17px;
   border-radius: 4px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
 }
