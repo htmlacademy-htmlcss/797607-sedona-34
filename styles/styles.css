@@ -119,7 +119,6 @@ image {
 
 .main-image {
   position: relative;
-
 }
 
 .main-image::before {
@@ -134,7 +133,6 @@ image {
   background-size: 100% auto;
   width: 100%;
   height: 56px;
-
 }
 
 .main-index {
